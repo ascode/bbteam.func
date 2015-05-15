@@ -29,17 +29,22 @@ function AddDebugInfo(strInfo) {//添加页面下面的调试信息debug为其配置参数
     }
 }
 
+var dalert = function (s) {//用来取代alert做调试，使alert调试方式加入debug开关控制范围
+    if (debug)
+    alert(s);
+}
+
 
 //拒绝成为内页
 function DenyToBeInnerPage() {
-    if (window.location.href != top.location.href) {
+    if (window != top) {
         top.location.href = window.location.href;
     }
 }
 
 //拒绝成为top页
 function DenyToBeTopPage() {
-    if (window.location.href == top.location.href) {
+    if (window == top) {
         top.location.href = "/";
     }
 }
