@@ -13,8 +13,7 @@
  *
  * Date: Mon Nov 21 21:11:03 2011 -0500
  */
-var smart_lodding;
-var debug = true;
+//It must add bbteam.func.first.config.js first to use this js
 function AddDebugInfo(strInfo) {//添加页面下面的调试信息debug为其配置参数
     if (debug) {
         if (!document.getElementById("#debugDataDiv")) {
