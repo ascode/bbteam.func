@@ -1,5 +1,5 @@
 /*!
- * bbteam JavaScript Library v1.0.3
+ * bbteam JavaScript Library v1.0.5
  * http://bbteam.cn/
  *
  * Copyright 2014, Arthur.King
